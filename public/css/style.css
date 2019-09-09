@@ -1,0 +1,52 @@
+body{
+    background:#037f8b;
+}
+#bg-img-in-back {
+    background: #037f8b;
+    padding: 12.5px;
+    /* background-image: url(../images/edouard-dognin-H6PaJwYMfUU-unsplash.jpg);
+    background-image: url(../images/adobe_spark_blue.jpg); */
+    position: relative;
+    background-size: cover;
+}
+
+#main-div-main-content {
+    background: yellow;
+    /* padding: 5px; */
+    /* position: absolute; */
+    height: 100vh;
+
+}
+
+
+/* #some-kind-of-card {
+    background: red;
+    height: 400px;
+    position: absolute;
+    right: 10%;
+} */
+
+#main-content {
+    margin-top: 50px;
+    /* background-color: rgba(128, 128, 128, 0.75); */
+}
+
+#blue-div {
+    /* background-color: black; */
+    /* padding: 200px 200px; */
+}
+
+#yellow-div {
+    /* background-color: white; */
+    /* padding: 200px 200px; */
+}
+
+#green-div {
+    /* background-color: white; */
+    /* padding: 200px 200px; */
+}
+
+#cyan-div {
+    /* background-color: black; */
+    /* padding: 200px 200px; */
+}
