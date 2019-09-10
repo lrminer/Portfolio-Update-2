@@ -42,7 +42,7 @@ module.exports = function (app) {
 
         data = [{
             title: 'Tweet Translator',
-            description: 'Project 1 for Georgia Tech Full Stack Web Development Bootcamp. Utilizes the Twitter and Google Translate APIs to send translated messages to twitter. Look me up on Twitter @consoleLogdog to see if it works!',
+            description: 'Project 1 for Georgia Tech Full Stack Web Development Bootcamp. Utilizes the Twitter and Google Translate APIs to send translated messages to twitter. Look me up on Twitter @consoleLogdog to see the tweet! (Please use responsively as the dev credentials go through my account!)',
             technologies: [],
             links: {
                 github: "https://github.com/lrminer/translate-tweet-app",

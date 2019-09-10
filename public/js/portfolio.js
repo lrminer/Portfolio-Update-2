@@ -12,7 +12,7 @@ $.get('/api/portfolio').then(function (data) {
     for (let i = 0; i < data.length; i++) {
         const col = $('<div>').addClass('col p-0');
         const h4 = $('<h4>').addClass('card-title').text(data[i].title);
-        const p = $('<p>').addClass('card-text').text(data[i].description)
+        const p = $('<p>').addClass('card-text').text(data[i].description);
         // const p = $('<p>').addClass('card-text').text(`Lorem ipsum dolor sit, amet consectetur adipisicing elit.
         // Libero maiores
         // odit ea rem, minima tenetur. Dolore in consequuntur doloribus numquam
