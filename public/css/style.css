@@ -1,6 +1,14 @@
 body{
-    background:#037f8b;
+    background:#000000;
+    /* background-image: url(../videos/Organic_Lines_4K_Motion_Background_Loop.mp4) */
 }
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
 #bg-img-in-back {
     background: #037f8b;
     padding: 12.5px;
@@ -8,6 +16,10 @@ body{
     background-image: url(../images/adobe_spark_blue.jpg); */
     position: relative;
     background-size: cover;
+}
+
+#headshot {
+    max-width:480px;
 }
 
 #main-div-main-content {
