@@ -41,6 +41,14 @@ module.exports = function (app) {
         // }]
 
         data = [{
+            title: 'Web Scraper',
+            description: `Scraping application that utilizes npm cheerio, npm mongoose, mongoDB, and jQuery to append articles to the DOM.`,
+            technologies: [],
+            links: {
+                github: "https://github.com/lrminer/Serebii-Scraper",
+                deployed: "https://hidden-gorge-63014.herokuapp.com/"
+            }
+        },{
             title: 'Tweet Translator',
             description: 'Project 1 for Georgia Tech Full Stack Web Development Bootcamp. Utilizes the Twitter and Google Translate APIs to send translated messages to twitter. Look me up on Twitter @consoleLogdog to see the tweet! (Please use responsively as the dev credentials go through my account!)',
             technologies: [],
