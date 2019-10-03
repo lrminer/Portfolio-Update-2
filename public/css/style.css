@@ -19,7 +19,11 @@ body{
 }
 
 #headshot {
-    max-width:480px;
+    max-width:300px;
+}
+
+.collapsable {
+    min-width: 300px;
 }
 
 #main-div-main-content {
@@ -30,6 +34,13 @@ body{
 
 }
 
+.contact-link {
+    color: white;
+}
+
+/* .f-18 {
+    font-size: 2em;
+} */
 
 /* #some-kind-of-card {
     background: red;
