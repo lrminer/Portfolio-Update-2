@@ -42,7 +42,7 @@ module.exports = function (app) {
 
         data = [{
             title: 'Pokemonline',
-            description: `Web-socketed version of the first generation of Pokemon (1996). Choose a character and walk around the world to find wild pokemon. Battles processd with the classic role playing game mechanics. Application also includes a chatbox where you can converse with other online players. Overworld designed to show other online players as they traverse through the map. Application built with WebGL utilizing HTML5 canvas element, socket.io, React, Node, MongoDB, and Express.`,
+            description: `Web-socketed version of the first generation of Pokemon (1996). Choose a character and walk around the world to find wild pokemon. Battles proceed with the classic role playing game mechanics. Application also includes a chatbox where you can converse with other online players. Overworld designed to show other online players as they traverse through the map. Application built with WebGL utilizing HTML5 canvas element, socket.io, React, Node, MongoDB, and Express.`,
             technologies: [],
             links: {
                 github: "https://github.com/michaelmccarty/proj3",
