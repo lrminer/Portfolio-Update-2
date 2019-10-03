@@ -38,6 +38,10 @@ body{
     color: white;
 }
 
+.contact-link:hover {
+    color:white;
+}
+
 /* .f-18 {
     font-size: 2em;
 } */
