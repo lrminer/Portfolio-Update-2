@@ -45,8 +45,8 @@ module.exports = function (app) {
             description: `Web-socketed version of the first generation of Pokemon (1996). Choose a character and walk around the world to find wild pokemon. Battles proceed with the classic role playing game mechanics. Application also includes a chatbox where you can converse with other online players. Overworld designed to show other online players as they traverse through the map. Application built with WebGL utilizing HTML5 canvas element, socket.io, React, Node, MongoDB, and Express.`,
             technologies: [],
             links: {
-                github: "https://github.com/michaelmccarty/proj3",
-                deployed: "https://dashboard.heroku.com/apps/obscure-anchorage-49534"
+                github: "https://github.com/lrminer/pokemonline",
+                deployed: "https://shrouded-bayou-73560.herokuapp.com/"
             }
         },{
             title: 'Web Scraper',
@@ -58,11 +58,11 @@ module.exports = function (app) {
             }
         },{
             title: 'Tweet Translator',
-            description: 'Project 1 for Georgia Tech Full Stack Web Development Bootcamp. Utilizes the Twitter and Google Translate APIs to send translated messages to twitter. Look me up on Twitter @consoleLogdog to see the tweet! (Please use responsively as the dev credentials go through my account!)',
+            description: 'Project 1 for Georgia Tech Full Stack Web Development Bootcamp. Utilizes the Twitter and Google Translate APIs to send translated messages to twitter. Look me up on Twitter @consoleLogdog to see the tweet! (Please use responsibly as the dev credentials are through my account!)',
             technologies: [],
             links: {
                 github: "https://github.com/lrminer/translate-tweet-app",
-                deployed: "https://cryptic-island-17961.herokuapp.com/"
+                deployed: "https://translate-a-tweet.herokuapp.com/"
             }
         }, {
             title: 'Budget App',
