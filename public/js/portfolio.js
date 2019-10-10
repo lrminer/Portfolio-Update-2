@@ -40,12 +40,22 @@ $.get("/api/portfolio").then(function(data) {
         .text("GitHub Repository")
     );
     // const aGHRepo = $('<a>').attr('href', "http://localhost:2000").text("GitHub Repository");
-    const aDeploy = $("<p>").append(
-      $("<a>")
-        .addClass("text-white")
-        .attr("href", data[i].links.deployed)
-        .text("Website")
-    );
+    if (data[i].links.deployed){
+      var aDeploy = $("<p>").append(
+        $("<a>")
+          .addClass("text-white")
+          .attr("href", data[i].links.deployed)
+          .text("Website")
+      );
+    } else {
+      var aDeploy = $("<p>").append(
+        $("<a>")
+          .addClass("text-white")
+          .attr("href", data[i].links.deployed)
+          
+      );
+    }
+ 
     const cardBody = $("<div>")
       .addClass("card-body")
       .append(h4, p, aDeploy, aGHRepo);

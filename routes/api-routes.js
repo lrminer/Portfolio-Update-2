@@ -78,11 +78,11 @@ module.exports = function (app) {
             technologies: [],
             links: {
                 github: "https://github.com/lrminer/Pokemon-Node",
-                deployed: "https://github.com/lrminer/Pokemon-Node/blob/master/README.md"
+                // deployed: "https://github.com/lrminer/Pokemon-Node/blob/master/README.md"
             }
         }, {
             title: 'Date.now',
-            description: 'A friend finding application that matches users based on a survey and a color choice. Matching algorith calculates individual differentials and sums their absolute values. Algorithm is weighted by the color they chose to provide a pseudo second survey, scoring users on differentials in red, blue, and green values from a parsed hexadecimal.',
+            description: 'A friend finding application that matches users based on a survey and a color choice. Matching algorithm calculates individual differences and sums their absolute values. Algorithm is weighted by the color they chose to provide a pseudo second survey, scoring users on differentials in red, blue, and green values from a parsed hexadecimal.',
             technologies: [],
             links: {
                 github: "https://github.com/lrminer/Friend-Finder",
@@ -94,7 +94,7 @@ module.exports = function (app) {
             technologies: [],
             links: {
                 github: "https://github.com/lrminer/LIRI-bot",
-                deployed: "https://github.com/lrminer/LIRI-bot/blob/master/README.md"
+                // deployed: "https://github.com/lrminer/LIRI-bot/blob/master/README.md"
             }
         }];
         res.json(data)
