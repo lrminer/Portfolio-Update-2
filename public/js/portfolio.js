@@ -55,10 +55,17 @@ $.get("/api/portfolio").then(function(data) {
           
       );
     }
+
+    const imageDiv = $('<div>');
+
+    data[i].images.forEach(imageSrc => {
+      const image = $('<img>').attr('src', imageSrc).addClass('portfolio-image');
+      imageDiv.append(image);
+    })
  
     const cardBody = $("<div>")
       .addClass("card-body")
-      .append(h4, p, aDeploy, aGHRepo);
+      .append(h4, p, aDeploy, aGHRepo, imageDiv);
     const card = $("<div>")
       .addClass("card text-white bg-primary collapsable mt-5")
       .append(cardBody);
