@@ -69,7 +69,7 @@ module.exports = function(app) {
           github: "https://github.com/lrminer/Budget-App",
           deployed: "https://green-financial.herokuapp.com/"
         },
-        images: ["./images/BudgetApp.png"]
+        images: ["./images/BudgetApp.PNG"]
       },
       {
         title: "Web Scraper",
@@ -79,7 +79,7 @@ module.exports = function(app) {
           github: "https://github.com/lrminer/Serebii-Scraper",
           deployed: "https://hidden-gorge-63014.herokuapp.com/"
         },
-        images: ["./images/Scraper.png"]
+        images: ["./images/Scraper.PNG"]
       },
       // {
       //     title: 'Pokemon Node',
@@ -99,7 +99,7 @@ module.exports = function(app) {
           github: "https://github.com/lrminer/Friend-Finder",
           deployed: "https://hidden-garden-49848.herokuapp.com/"
         },
-        images: ["./images/DateNow.png"]
+        images: ["./images/DateNow.PNG"]
       },
       {
         title: "LIRI Bot",
