@@ -1,0 +1,8 @@
+div#navbar {
+  display: flex;
+  flex-direction: row;
+}
+
+#navbar-links {
+  margin-right: 0.5rem;
+}

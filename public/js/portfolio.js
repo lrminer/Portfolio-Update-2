@@ -7,6 +7,18 @@ $.get("/api/portfolio").then(function(data) {
 
   // })
 
+  for (let i = 0; i < data.length; i++) {
+    const link = $("<li>")
+      .addClass("nav-item")
+      .append(
+        $("<a>")
+          .addClass("nav-link")
+          .text(data[i].title)
+          .attr("href", "#" + data[i].title)
+      );
+    $("#link-list").append(link);
+  }
+
   // not going to be able to do a normal loop here because we need to add the empty columns as well.
   // we need to, on every other iteration, create two empty div.col elements to keep spacing :)
   for (let i = 0; i < data.length; i++) {
@@ -40,7 +52,7 @@ $.get("/api/portfolio").then(function(data) {
         .text("GitHub Repository")
     );
     // const aGHRepo = $('<a>').attr('href', "http://localhost:2000").text("GitHub Repository");
-    if (data[i].links.deployed){
+    if (data[i].links.deployed) {
       var aDeploy = $("<p>").append(
         $("<a>")
           .addClass("text-white")
@@ -52,19 +64,23 @@ $.get("/api/portfolio").then(function(data) {
         $("<a>")
           .addClass("text-white")
           .attr("href", data[i].links.deployed)
-          
       );
     }
 
-    const imageDiv = $('<div>');
+    const imageDiv = $("<div>").addClass(
+      "d-flex flex-column align-items-center"
+    );
 
     data[i].images.forEach(imageSrc => {
-      const image = $('<img>').attr('src', imageSrc).addClass('portfolio-image');
+      const image = $("<img>")
+        .attr("src", imageSrc)
+        .addClass("portfolio-image");
       imageDiv.append(image);
-    })
- 
+    });
+
     const cardBody = $("<div>")
-      .addClass("card-body")
+      .attr("id", data[i].title)
+      .addClass("card-body d-flex flex-column align-items-center")
       .append(h4, p, aDeploy, aGHRepo, imageDiv);
     const card = $("<div>")
       .addClass("card text-white bg-primary collapsable mt-5")
@@ -105,4 +121,27 @@ $.get("/api/portfolio").then(function(data) {
   //     col.append(card);
   //     $('div#display').append(col);
   // });
+
+  const technicalSkillsList = [
+    { tech: "JavaScript", image: "./images/javascript.png" },
+    { tech: "html", image: "./images/html.png" },
+    { tech: "css", image: "./images/css.png" },
+    { tech: "node", image: "./images/node.png" },
+    { tech: "react", image: "./images/react.png" },
+    { tech: "mongodb", image: "./images/mongodb.jpg" },
+    { tech: "socketio", image: "./images/socketio.png" },
+    { tech: "mysql", image: "./images/mysql.jpg" },
+    // { tech: "JavaScript", image: "./images/javascript.png" }
+  ];
+
+  for (let i = 0; i < technicalSkillsList.length; i++) {
+    const div = $("<div>")
+      .addClass("technical-skill-div col d-flex flex-column align-items-center")
+      .append(
+        $("<h6>").text(technicalSkillsList[i].tech),
+        $("<img>").attr("src", technicalSkillsList[i].image).addClass('tech-image')
+      );
+
+    $("#technical-skills").append(div);
+  }
 });
