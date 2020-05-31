@@ -22,7 +22,7 @@ $.get("/api/portfolio").then(function(data) {
   // not going to be able to do a normal loop here because we need to add the empty columns as well.
   // we need to, on every other iteration, create two empty div.col elements to keep spacing :)
   for (let i = 0; i < data.length; i++) {
-    const col = $("<div>").addClass("col p-0");
+    const col = $("<div>").addClass("col");
     const h4 = $("<h4>")
       .addClass("card-title")
       .text(data[i].title);
@@ -89,8 +89,8 @@ $.get("/api/portfolio").then(function(data) {
     $("div#display").append(col);
     const w100 = $("<div>").addClass("w-100");
     if ((i + 1) % 2) {
-      const fillercol1 = $("<div>").addClass("col");
-      const fillercol2 = $("<div>").addClass("col");
+      const fillercol1 = $("<div>").addClass("col-12 col-sm-6");
+      const fillercol2 = $("<div>").addClass("col-12 p-0 col-sm-6");
       $("div#display").append(fillercol1, w100, fillercol2);
     } else {
       $("div#display").append(w100);
