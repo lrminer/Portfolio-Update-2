@@ -47,7 +47,7 @@ $.get("/api/portfolio").then(function(data) {
 
     const aGHRepo = $("<p>").append(
       $("<a>")
-        .addClass("text-white")
+        .addClass("text-black")
         .attr("href", data[i].links.github)
         .text("GitHub Repository")
     );
@@ -55,14 +55,14 @@ $.get("/api/portfolio").then(function(data) {
     if (data[i].links.deployed) {
       var aDeploy = $("<p>").append(
         $("<a>")
-          .addClass("text-white")
+          .addClass("text-black")
           .attr("href", data[i].links.deployed)
           .text("Website")
       );
     } else {
       var aDeploy = $("<p>").append(
         $("<a>")
-          .addClass("text-white")
+          .addClass("text-black")
           .attr("href", data[i].links.deployed)
       );
     }

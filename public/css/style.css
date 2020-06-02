@@ -1,5 +1,5 @@
 body {
-  background: #000000;
+  background: #047bfe;
   /* background-image: url((../videos/Organic_Lines_4K_Motion_Background_Loop.mp4)) */
 }
 
@@ -38,11 +38,11 @@ body {
 }
 
 .contact-link {
-  color: white;
+  color: black;
 }
 
 .contact-link:hover {
-  color: white;
+  color: black;
 }
 
 .portfolio-image {
@@ -55,6 +55,14 @@ body {
   max-width: 50px;
 }
 
+.card-body{
+  background: #E3F1F7;
+  color: black;
+}
+
+a.text-black {
+  color: black;
+}
 /* .f-18 {
     font-size: 2em;
 } */
